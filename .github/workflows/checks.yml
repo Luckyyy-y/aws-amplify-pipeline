@@ -1,0 +1,16 @@
+name: Build checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check the real webpage
+        run: bash scripts/check.sh
+      - name: Test passing and failing examples
+        run: python3 -m unittest discover -s tests -v

@@ -4,7 +4,7 @@ I'm using this project to practice CI/CD with a small webpage instead of startin
 
 This is my personal copy of the [UH AWS Cloud Club workshop starter](https://github.com/uhawscloudclub/pipeline-starter-aws), based on its September 30, 2026 version (`2ac541c`). The original workshop supplied the page, Amplify configuration, and idea of testing a broken title and a fake AWS key. My copy adds a personalized page, a shared check script, a name check, failure-case tests, and GitHub Actions. The original repository is unchanged.
 
-**Status: in progress.** Local checks and nine tests pass. The AWS connection, live deployment, and failed-deployment behavior still need to be verified on my AWS account. There is no live Amplify URL yet.
+**Status: in progress.** Local checks and nine tests pass, and the first GitHub Actions run passed too. The AWS connection, live deployment, and failed-deployment behavior still need to be verified on my AWS account. There is no live Amplify URL yet.
 
 ## What this project does
 
@@ -45,6 +45,10 @@ flowchart TD
 ![Local preview of the pipeline lab page](docs/images/page-preview.jpg)
 
 This screenshot is from a local browser preview. It is not proof of an AWS deployment.
+
+![Successful GitHub Actions run for this project](docs/images/ci-passed.jpg)
+
+The [first hosted CI run](https://github.com/Luckyyy-y/aws-amplify-pipeline/actions/runs/37161266572) passed for commit `33ad9b2`. It ran the page checks and the nine failure-case tests. This verifies GitHub CI, while AWS deployment remains pending.
 
 - [Build checks and test results](docs/project-notes.md)
 - [AWS setup and evidence checklist](docs/deployment.md)

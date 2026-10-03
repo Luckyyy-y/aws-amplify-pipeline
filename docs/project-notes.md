@@ -41,6 +41,8 @@ The fake IDs are generated inside temporary test folders. They are not real cred
 
 ## Still to verify
 
+The first [GitHub Actions run](https://github.com/Luckyyy-y/aws-amplify-pipeline/actions/runs/37161266572) also completed successfully for commit `33ad9b2`. The screenshot is saved in `images/ci-passed.jpg`.
+
 These results show that the local script works for these examples. They do not show that Amplify has deployed anything or preserved the previous site after a failed build. That evidence belongs in [deployment.md](deployment.md) after testing on AWS.
 
 ## Notes to add after doing the AWS lab
